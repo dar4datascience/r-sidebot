@@ -350,7 +350,7 @@ server <- function(input, output, session) {
   # Handle user input
   observeEvent(input$chat_user_input, {
     # Add user message to the chat history
-    chat_append("chat", chat$stream_async(input$chat_user_input)) %...>% {
+    chat_append("chat", chat$chat_async(input$chat_user_input)) %...>% {
       # print(chat)
     }
   })

@@ -55,7 +55,7 @@ explain_plot <- function(chat, p, model, ..., .ctx = NULL, session = getDefaultR
   ) |> tagAppendAttributes(style = "--bs-modal-margin: 1.75rem;"))
 
   session$onFlushed(function() {
-    stream <- chat$stream_async(
+    stream <- chat$chat_async(
       "Interpret this plot, which is based on the current state of the data (i.e. with filtering applied, if any). Try to make specific observations if you can, but be conservative in drawing firm conclusions and express uncertainty if you can't be confident.",
       img_content
     )
@@ -63,7 +63,7 @@ explain_plot <- function(chat, p, model, ..., .ctx = NULL, session = getDefaultR
   })
 
   observeEvent(session$input[[paste0(chat_id, "_user_input")]], {
-    stream <- chat$stream_async(session$input[[paste0(chat_id, "_user_input")]])
+    stream <- chat$chat_async(session$input[[paste0(chat_id, "_user_input")]])
     chat_append(chat_id, stream)
   })
 }
