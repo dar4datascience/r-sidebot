@@ -11,10 +11,10 @@ Then run:
 ```r
 pak::pak(c("bslib", "DBI", "dplyr", "duckdb", "fastmap", "fontawesome",
   "ggplot2", "ggridges", "here", "plotly", "reactable", "shiny",
-  "hadley/elmer", "jcheng5/shinychat"))
+  "hadley/ellmer", "jcheng5/shinychat"))
 ```
 
-(Note that [{elmer}](https://github.com/hadley/elmer) and [{shinychat}](https://github.com/jcheng5/shinychat) are highly experimental and their APIs may change.)
+(Note that [{ellmer}](https://github.com/hadley/ellmer) and [{shinychat}](https://github.com/jcheng5/shinychat) are highly experimental and their APIs may change.)
 
 ## Warnings and limitations
 

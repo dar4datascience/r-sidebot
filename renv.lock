@@ -20,6 +20,38 @@
       ],
       "Hash": "065ae649b05f1ff66bb0c793107508f5"
     },
+    "MASS": {
+      "Package": "MASS",
+      "Version": "7.3-61",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "grDevices",
+        "graphics",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "0cafd6f0500e5deba33be22c46bf6055"
+    },
+    "Matrix": {
+      "Package": "Matrix",
+      "Version": "1.6-5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "grDevices",
+        "graphics",
+        "grid",
+        "lattice",
+        "methods",
+        "stats",
+        "utils"
+      ],
+      "Hash": "8c7115cd3a0e048bda2a7cd110549f7a"
+    },
     "R6": {
       "Package": "R6",
       "Version": "2.5.1",
@@ -50,6 +82,17 @@
         "utils"
       ],
       "Hash": "e7bdd9ee90e96921ca8a0f1972d66682"
+    },
+    "S7": {
+      "Package": "S7",
+      "Version": "0.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "utils"
+      ],
+      "Hash": "5deb66b3ae702137e1f4162c11861e76"
     },
     "askpass": {
       "Package": "askpass",
@@ -184,13 +227,13 @@
     },
     "curl": {
       "Package": "curl",
-      "Version": "5.2.1",
+      "Version": "6.2.0",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
-      "Hash": "411ca2c03b1ce5f548345d2fc2685f7a"
+      "Hash": "b580cbb010099fd990df6bfe44459e1a"
     },
     "data.table": {
       "Package": "data.table",
@@ -249,6 +292,26 @@
         "utils"
       ],
       "Hash": "fd21294f7eb3cc87491717ad8cea379b"
+    },
+    "ellmer": {
+      "Package": "ellmer",
+      "Version": "0.1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R6",
+        "S7",
+        "cli",
+        "coro",
+        "glue",
+        "httr2",
+        "jsonlite",
+        "later",
+        "lifecycle",
+        "promises",
+        "rlang"
+      ],
+      "Hash": "754d3a8cbb25b05be2058892f579422f"
     },
     "evaluate": {
       "Package": "evaluate",
@@ -470,9 +533,9 @@
     },
     "httr2": {
       "Package": "httr2",
-      "Version": "1.0.1",
+      "Version": "1.1.0",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "R6",
@@ -487,7 +550,7 @@
         "vctrs",
         "withr"
       ],
-      "Hash": "03d741c92fda96d98c3a3f22494e3b4a"
+      "Hash": "0f14199bbd820a9fca398f2df40994f1"
     },
     "isoband": {
       "Package": "isoband",
@@ -558,6 +621,21 @@
       ],
       "Hash": "501744395cac0bab0fbcfab9375ae92c"
     },
+    "lattice": {
+      "Package": "lattice",
+      "Version": "0.22-5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "grDevices",
+        "graphics",
+        "grid",
+        "stats",
+        "utils"
+      ],
+      "Hash": "7c5e89f04e72d6611c77451f6331a091"
+    },
     "lazyeval": {
       "Package": "lazyeval",
       "Version": "0.2.2",
@@ -602,6 +680,23 @@
       ],
       "Hash": "e2817ccf4a065c5d9d7f2cfbe7c1d78c"
     },
+    "mgcv": {
+      "Package": "mgcv",
+      "Version": "1.9-1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "Matrix",
+        "R",
+        "graphics",
+        "methods",
+        "nlme",
+        "splines",
+        "stats",
+        "utils"
+      ],
+      "Hash": "110ee9d83b496279960e162ac97764ce"
+    },
     "mime": {
       "Package": "mime",
       "Version": "0.12",
@@ -622,6 +717,20 @@
         "methods"
       ],
       "Hash": "4fd8900853b746af55b81fda99da7695"
+    },
+    "nlme": {
+      "Package": "nlme",
+      "Version": "3.1-165",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "graphics",
+        "lattice",
+        "stats",
+        "utils"
+      ],
+      "Hash": "2769a88be217841b1f33ed469675c3cc"
     },
     "openssl": {
       "Package": "openssl",
@@ -881,9 +990,15 @@
     },
     "shinychat": {
       "Package": "shinychat",
-      "Version": "0.1.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
+      "Version": "0.1.1.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "shinychat",
+      "RemoteUsername": "posit-dev",
+      "RemotePkgRef": "posit-dev/shinychat",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "e76f15a7a871c9a7468addfbff695494fa8ecd30",
       "Requirements": [
         "bslib",
         "coro",
@@ -892,7 +1007,7 @@
         "rlang",
         "shiny"
       ],
-      "Hash": "91710277289f23fa91f7f2c257d94996"
+      "Hash": "4fac8befbea2a73366a61ac0d376bce7"
     },
     "sourcetools": {
       "Package": "sourcetools",

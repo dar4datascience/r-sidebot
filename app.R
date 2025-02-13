@@ -11,7 +11,7 @@ library(plotly)
 library(ggplot2)
 library(ggridges)
 library(dplyr)
-library(elmer)
+library(ellmer)
 library(shinychat)
 
 # Open the duckdb database

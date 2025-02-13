@@ -16,7 +16,7 @@ plot_to_img_content.plotly <- function(p) {
 
   # Save the plot as an image
   save_image(p, tmp, width = 800, height = 600)
-  elmer::content_image_file(tmp, resize = "high")
+  ellmer::content_image_file(tmp, resize = "high")
 }
 
 plot_to_img_content.ggplot <- function(p) {
@@ -25,7 +25,7 @@ plot_to_img_content.ggplot <- function(p) {
   on.exit(unlink(tmp))
 
   ggsave(tmp, p, width = 800, height = 600, units = "px", dpi = 100)
-  elmer::content_image_file(tmp, resize = "high")
+  ellmer::content_image_file(tmp, resize = "high")
 }
 
 explain_plot <- function(chat, p, model, ..., .ctx = NULL, session = getDefaultReactiveDomain()) {
