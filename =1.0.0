@@ -1,0 +1,10 @@
+Usage: shiny [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  create         Create a Shiny application from a template.
+  run            Run a Shiny app (press Ctrl+C to stop).
+  static         The functionality from `shiny static` has been moved to...
+  static-assets  Manage local copy of assets for static app deployment.
